@@ -1,0 +1,41 @@
+.friends__title {
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.8;
+  top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px;
+  padding: 10px 20px;
+}
+
+.friend__avatar {
+  width: 16%;
+
+  border-radius: 30px;
+}
+
+.friend__column {
+  border-top: 1px solid #f7f7f7;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.friend__information {
+  display: block;
+  font-size: 14px;
+}
+
+.friend__name {
+  padding-left: 11px;
+  font-size: 11px;
+}
+.friends__invite {
+  font-size: 14px;
+  justify-self: center;
+  border: 2px solid #fce006;
+  padding: 10px 10px;
+  border-radius: 10px;
+}

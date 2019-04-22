@@ -1,0 +1,37 @@
+.myoffice__column {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.myoffice-texto {
+  font-size: 14px;
+}
+.myoffice-texti {
+  font-size: 14px;
+}
+
+.keyimg {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.myoffice__text {
+  opacity: 0.6;
+  text-align: center;
+  font-size: 14px;
+}
+
+.invite__select {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0px;
+  border-top: 1px solid #f7f7f7;
+}

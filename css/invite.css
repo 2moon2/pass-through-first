@@ -1,0 +1,29 @@
+.invite__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.invite__avatar {
+  width: 25%;
+  border-radius: 20px;
+}
+
+.invite__name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.invite-time_text {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.timepicker-bar {
+  width: 100px;
+}
