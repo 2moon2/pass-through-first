@@ -1,96 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
-    />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
 
-    <title>Invitation</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="wallet">
-      <div class="wallet__title">Wallet</div>
-      <div class="wallet__content">
-        <div class="wallet__content wallet-text">FLAGONE</div>
-        <div class="wallet-on-off">
-          <div class="wallet__content wallet-on wallet-on1">ON</div>
-          <div class="wallet__content wallet-off">OFF</div>
-        </div>
-      </div>
-      <div class="wallet__content">
-        <div class="wallet__content wallet-text">WEWORK</div>
-        <div class="wallet-on-off">
-          <div class="wallet__content wallet-on">ON</div>
-          <div class="wallet__content wallet-off wallet-off1">OFF</div>
-        </div>
-      </div>
-      <div class="wallet__content">
-        <div class="wallet__content wallet-text">FASTFIVE</div>
-        <div class="wallet-on-off">
-          <div class="wallet__content wallet-on wallet-on1">ON</div>
-          <div class="wallet__content wallet-off">OFF</div>
-        </div>
-      </div>
-        <div class="wallet__content">
-          <div class="wallet__content wallet-text">NONCE</div>
-          <div class="wallet-on-off">
-            <div class="wallet__content wallet-on">ON</div>
-            <div class="wallet__content wallet-off wallet-off1">OFF</div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-users"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="key.html" class="nav__list-link">
-            <i class="fas fa-key"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="wallet.html" class="nav__list-link">
-            <i class="fas fa-wallet"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link"
-            ><i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	var checkbox0 = $("#checkbox0");
+		checkbox0.click(function() {
+			$(".p0").toggle();
+		});
+	var checkbox1 = $("#checkbox1");
+		checkbox1.click(function() {
+			$(".p1").toggle();
+		});
+	var checkbox2 = $("#checkbox2");
+		checkbox2.click(function() {
+			$(".p2").toggle();
+		});
+	var checkbox3 = $("#checkbox3");
+		checkbox3.click(function() {
+			$(".p3").toggle();
+		});
+
+	});
+</script>
+
+
+<title>Invitation</title>
+
+</head>
+<body>
+	<header class="header">
+		<div class="header__header-column">
+			<span class="header__icon"> <i class="fas fa-bars"></i>
+			</span>
+		</div>
+		<div class="header__header-column">
+			<span class="header__icon"> <i class="fas fa-cog"></i>
+			</span>
+		</div>
+	</header>
+	<main class="wallet">
+	<div class="wallet__title">Wallet</div>
+	<div class="wallet__content">
+		<div class="wallet__content wallet-text">FLAGONE</div>
+		<div class="wallet-on-off">
+			<label class="switch"> <input type="checkbox"
+				id="checkbox0"> <span class="slider round"></span>
+			</label>
+			<p class="p0">OFF</p>
+			<p class="p0" style="display: none;">ON</p>
+		</div>
+	</div>
+	<div class="wallet__content">
+		<div class="wallet__content wallet-text">WEWORK</div>
+		<div class="wallet-on-off">
+			<label class="switch"> <input type="checkbox"
+				id="checkbox1"> <span class="slider round"></span>
+			</label>
+			<p class="p1">OFF</p>
+			<p class="p1" style="display: none;">ON</p>
+		</div>
+	</div>
+	<div class="wallet__content">
+		<div class="wallet__content wallet-text">FASTFIVE</div>
+		<div class="wallet-on-off">
+			<label class="switch"> <input type="checkbox"
+				id="checkbox2"> <span class="slider round"></span>
+			</label>
+			<p class="p2">OFF</p>
+			<p class="p2" style="display: none;">ON</p>
+		</div>
+	</div>
+	<div class="wallet__content">
+		<div class="wallet__content wallet-text">NONCE</div>
+		<div class="wallet-on-off">
+			<label class="switch"> <input type="checkbox"
+				id="checkbox3"> <span class="slider round"></span>
+			</label>
+			<p class="p3">OFF</p>
+			<p class="p3" style="display: none;">ON</p>
+		</div>
+	</div>
+	</div>
+	</main>
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__list-item"><a href="friends.html"
+				class="nav__list-link"> <i class="fas fa-users"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="key.html"
+				class="nav__list-link"> <i class="fas fa-key"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="wallet.html"
+				class="nav__list-link"> <i class="fas fa-wallet"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="more.html"
+				class="nav__list-link"><i class="fas fa-ellipsis-h"></i> </a></li>
+		</ul>
+	</nav>
+</body>
+
 </html>

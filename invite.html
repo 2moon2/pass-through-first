@@ -1,138 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="styleseet" href="css/bootstrap.css" />
 
-    <title>Invite</title>
-    <link rel="styleseet" href="css/bootstrap.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="invite">
-      <header class="invite__header">
-        <div class="invite__friend friend">
-          <div class="invite__column">
-            <img src="images/1.jpg" class=" invite__avatar" />
-            <div class="invite__content"></div>
-          </div>
-          <span class="invite__name">
-            조나단
-          </span>
-        </div>
-        <div class="invite__setting">
-          <!-- Date and time picker with disbaled dates -->
-          <div
-            class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-floating-label-completed"
-          >
-            <label class="control-label" for="datepicker-disabled-days"
-              >시작 시간</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="datepicker-disabled-days"
-            />
-          </div>
-          <div style="overflow:hidden;">
-            <div class="form-group">
-              <div class="row">
-                <div class="col-md-8">
-                  <div id="datetimepicker12"></div>
-                </div>
-              </div>
-            </div>
-            <script type="text/javascript">
-              $(function() {
-                $("#datetimepicker12").datetimepicker({
-                  inline: true,
-                  sideBySide: true
-                });
-              });
-            </script>
-          </div>
-          <div
-            class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-floating-label-completed"
-          >
-            <label class="control-label" for="datepicker-disabled-days"
-              >종료 시간</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="datepicker-disabled-days"
-            />
-          </div>
-          <div style="overflow:hidden;">
-            <div class="form-group">
-              <div class="row">
-                <div class="col-md-8">
-                  <div id="datetimepicker12"></div>
-                </div>
-              </div>
-            </div>
-            <script type="text/javascript">
-              $(function() {
-                $("#datetimepicker12").datetimepicker({
-                  inline: true,
-                  sideBySide: true
-                });
-              });
-            </script>
-            <div class="invite__select">
-          <a href="friends.html"><div class="invite__setting invite-decide">확인</div></a>
-          <a href="friends.html"> <div class="invite__setting invite-cancle">취소</div></a>
-          </div>
-        </div>
-      </header>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-users"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="key.html" class="nav__list-link">
-            <i class="fas fa-key"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="wallet.html" class="nav__list-link">
-            <i class="fas fa-wallet"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link"
-            ><i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+<title>Invite</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js" integrity="sha256-/As5lS2upX/fOCO/h/5wzruGngVW3xPs3N8LN4FkA5Q=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment-with-locales.min.js" integrity="sha256-rFEvCvgZWluLPnjiBNa/p3nJLJxTP1XYw4W6FZz2S98=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/locale/ko.js" integrity="sha256-52Xn0wi4kPGcROqCAA5EoontBDks09MLjv7fd5WAj3U=" crossorigin="anonymous"></script>
+
+<!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+    <!-- bootstrap datetimepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	function ok() {
+		alert("초대장이 발송되었습니다.")
+	}
+</script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__header-column">
+			<span class="header__icon"> <i class="fas fa-bars"></i>
+			</span>
+		</div>
+		<div class="header__header-column">
+			<span class="header__icon"> <i class="fas fa-cog"></i>
+			</span>
+		</div>
+	</header>
+	<main class="invite"> <header class="invite__header">
+		<div class="invite__friend friend">
+			<div class="invite__column">
+				<img src="images/1.jpg" class=" invite__avatar" />
+				<div class="invite__content"></div>
+			</div>
+			<span class="invite__name"> 조나단 </span>
+		</div>
+		<div class="invite__setting">
+			<!-- Date and time picker with disbaled dates -->
+			<div
+				class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-floating-label-completed">
+				<label class="control-label" for="datepicker-disabled-days">시작
+					시간</label> <input type="text" class="form-control"
+					id="datetimepicker1" />
+			</div>
+				<script type="text/javascript">
+					$(function() {
+						$("#datetimepicker1").datetimepicker({
+			                inline: true,
+			                sideBySide: true
+								});
+						$("#datetimepicker2").datetimepicker({
+			                inline: true,
+			                sideBySide: true
+								});
+								});
+						</script>
+			</div>
+			<div
+				class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-floating-label-completed">
+				<label class="control-label" for="datepicker-disabled-days">종료
+					시간</label> <input type="text" class="form-control"
+					id="datetimepicker2" />
+					
+			</div>
+				<div class="invite__select">
+					<a href="friends.html" onclick="ok()"><div
+							class="invite__setting invite-decide">확인</div></a> <a
+						href="friends.html">
+						<div class="invite__setting invite-cancle">취소</div>
+					</a>
+				</div>
+			</div>
+	</header> </main>
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__list-item"><a href="friends.html"
+				class="nav__list-link"> <i class="fas fa-users"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="key.html"
+				class="nav__list-link"> <i class="fas fa-key"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="wallet.html"
+				class="nav__list-link"> <i class="fas fa-wallet"></i>
+			</a></li>
+			<li class="nav__list-item"><a href="more.html"
+				class="nav__list-link"><i class="fas fa-ellipsis-h"></i> </a></li>
+		</ul>
+	</nav>
+</body>
 </html>
